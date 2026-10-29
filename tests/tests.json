@@ -1,0 +1,7 @@
+[
+  {"name":"Create and publish a portfolio","sanity":true,"viewport":"desktop","covers":["authentication redirect","create public profile","persistent database write","public creator discovery"],"expected":"A signed-in creator can publish a profile and see it in public discovery."},
+  {"name":"Edit a portfolio and retain changes","viewport":"desktop","covers":["owner-scoped profile read","update existing profile","persistence after reload"],"expected":"Updated profile fields remain visible after reload."},
+  {"name":"Validate profile handles and unsafe project URLs","viewport":"desktop","covers":["required-field validation","handle sanitization","URL protocol validation"],"expected":"Required fields are enforced and unsafe URLs are not published as clickable links."},
+  {"name":"Browse and search creator portfolios on mobile","viewport":"mobile","covers":["public profile discovery","creator search","skill filtering","responsive mobile layout"],"expected":"Visitors can search, filter and open portfolios on mobile."},
+  {"name":"Keep account data isolated between creators","viewport":"desktop","covers":["anonymous write denial","authenticated profile ownership","public-only profile fields","cross-user data isolation"],"expected":"Anonymous writes are rejected and creators can edit only their own profile."}
+]
